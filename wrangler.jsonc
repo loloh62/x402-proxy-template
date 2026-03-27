@@ -50,7 +50,7 @@
 		// The default "dead address" below is useful for testing - payments
 		// sent there are unrecoverable but allow testing the flow.
 		//
-		"PAY_TO": "0x000000000000000000000000000000000000dEaD",
+		"PAY_TO": "0xB0CB1710Ca6F6eB2B09D629BAD77d8f66b625e00",
 		// =====================================================================
 		// NETWORK - Blockchain network for payments (REQUIRED)
 		// =====================================================================
