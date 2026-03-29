@@ -1,0 +1,9 @@
+# Install dependencies
+npm install
+
+# Configure JWT secret for local development
+cp .dev.vars.example .dev.vars
+node -e "console.log('JWT_SECRET=' + require('crypto').randomBytes(32).toString('hex'))" >> .dev.vars
+
+# Start the dev server
+npm run dev
