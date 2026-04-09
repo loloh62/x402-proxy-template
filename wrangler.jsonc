@@ -67,7 +67,7 @@
 		// Define which routes require payment and how much they cost.
 		// Each entry has:
 		//   - pattern: Route to protect (supports /* wildcards)
-		//   - price: Cost in USD (e.g., "$0.01")
+		//   - price: Cost in USD (e.g., "$0.05")
 		//   - description: Shown to users explaining what they're paying for
 		//
 		// After payment, users get a JWT cookie valid for 1 hour.
