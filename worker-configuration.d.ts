@@ -8,8 +8,8 @@ declare namespace Cloudflare {
 	interface Env {
 		PAY_TO: "0x89695B77A1Ebe9d856c10B709741A1f7aa69703a";
 		NETWORK: "base-sepolia";
-		PROTECTED_PATTERNS: [{"pattern":"/premium/*","price":"$0.01","description":"Access to premium content for 1 hour"}];
-		FACILITATOR_URL: "https://x402.org/facilitator";
+		PROTECTED_PATTERNS: [{"pattern":"/api.lolo62.fun/*","price":"$0.05","description":"Access to premium content for 1 hour"}];
+		FACILITATOR_URL: "https://sepolia.basescan.org";
 	}
 }
 interface CloudflareBindings extends Cloudflare.Env {}
