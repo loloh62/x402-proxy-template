@@ -4,4 +4,4 @@
 # JWT secret for signing authentication tokens
 # Generate a secure random secret with:
 # node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-JWT_SECRET=your-secret-key-here
+JWT_SECRET=7d78aa6d9cce1ec57b6c851b8db642f13292f4894a1fd07ec391888da004082e
