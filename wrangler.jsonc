@@ -77,10 +77,7 @@
 		// This enables "default closed" - humans pass free, bots must pay.
 		//
 		"PROTECTED_PATTERNS": [
-			 ─────────────────────────────────────────────────────────────────
-			 Example: Basic - All traffic must pay
-			 ─────────────────────────────────────────────────────────────────
-			{
+{
 				"pattern": "api.lolo62.fun/*",
 				"price": "$0.05",
 				"description": "Access to api.lolo62.fun/* content for 1 hour",
