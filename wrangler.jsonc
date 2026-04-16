@@ -21,12 +21,12 @@
 	// Uncomment and configure routes to deploy x402-proxy on your domain.
 	// The proxy will intercept all requests matching these patterns.
 	//
-	// "routes": [
-	// 	{
-	// 		"pattern": "api.lolo62.fun/*",
-	// 		"zone_name": "lolo62.fun",
-	// 	},
-	// ],
+	"routes": [
+	 	{
+	 		"pattern": "api.lolo62.fun/*",
+	 		"zone_name": "lolo62.fun",
+	 	},
+	 ],
 	// =========================================================================
 	// SERVICE BINDING - If your origin is another Cloudflare Worker
 	// =========================================================================
