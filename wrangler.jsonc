@@ -34,84 +34,14 @@
 	// 		"service": "my-origin-worker",
 	// 	},
 	// ],
-	"vars": {
-		// =====================================================================
-		// PAY_TO - Your wallet address to receive payments (REQUIRED)
-		// =====================================================================
-		// This is where payments will be sent when users pay for access.
-		// Any Ethereum-compatible wallet works (MetaMask, Coinbase Wallet, etc.).
-		//
-		// The default "dead address" below is useful for testing - payments
-		// sent there are unrecoverable but allow testing the flow.
-		//
-		"PAY_TO": "0x89695B77A1Ebe9d856c10B709741A1f7aa69703a",
-		// =====================================================================
-		// NETWORK - Blockchain network for payments (REQUIRED)
-		// =====================================================================
-		// Use "base-sepolia" for testing (free testnet tokens).
-		// Use "base" for production.
-		//
-		// Get testnet tokens: https://docs.cdp.coinbase.com/faucets/
-		// Supported networks: https://x402.org
-		//
-		"NETWORK": "base",
-		// =====================================================================
-		// PROTECTED_PATTERNS - Routes requiring payment (REQUIRED)
-		// =====================================================================
-		// Define which routes require payment and how much they cost.
-		// Each entry has:
-		//   - pattern: Route to protect (supports /* wildcards)
-		//   - price: Cost in USD (e.g., "$0.05")
-		//   - description: Shown to users explaining what they're paying for
-		//
-		// After payment, users get a JWT cookie valid for 1 hour.
-		//
-		// ─────────────────────────────────────────────────────────────────────
-		// BOT MANAGEMENT FILTERING (Optional)
-		// Requires Bot Management for Enterprise to enable bot filtering.
-		// ─────────────────────────────────────────────────────────────────────
-		// With Bot Management enabled, you can add:
-		//   - bot_score_threshold: Score at or below which payment is required
-		//   - except_detection_ids: Detection IDs of bots that access FREE
-		//
-		// This enables "default closed" - humans pass free, bots must pay.
-		//
-		"PROTECTED_PATTERNS": [
-{
-				"pattern": "api.lolo62.fun/*",
-				"price": "$0.05",
-				"description": "Access to api.lolo62.fun content for 1 hour",
-			}],
-		// =====================================================================
-		// ORIGIN_URL - External origin URL (OPTIONAL)
-		// =====================================================================
-		// Controls how requests are proxied to your backend after authentication.
-		//
-		// NOT SET (default): DNS-based proxy mode. Requests are forwarded to the
-		// origin server defined in your Cloudflare DNS records. Use this when your
-		// backend is a traditional server (VM, container, etc.).
-		//
-		// SET TO A URL: External Origin mode. Requests are rewritten to this URL.
-		// Use this to proxy to another Cloudflare Worker (on a Custom Domain) or
-		// any external service.
-		//
-		// Note: If ORIGIN_SERVICE binding is configured above, it takes priority
-		// over both ORIGIN_URL and DNS-based routing.
-		//
-		// "ORIGIN_URL": "https://my-backend.example.com",
-		// =====================================================================
-		// FACILITATOR_URL - Payment verification service (OPTIONAL)
-		// =====================================================================
-		// The facilitator verifies and settles payments on behalf of your server.
-		// Defaults to CDP facilitator if not set.
-		//
-		// Example facilitators:
-		//   - CDP (default): https://x402.org/facilitator (Base, Base Sepolia)
-		//   - PayAI: https://facilitator.payai.network (multi-chain)
-		//
-		// See: https://x402.gitbook.io/x402/core-concepts/facilitator
-		//
-		"FACILITATOR_URL": "https://sepolia.basescan.org",
-	},
-	"upload_source_maps": true,
-}
+	  "vars": {
+    "PAY_TO": "0x89695B77A1Ebe9d856c10B709741A1f7aa69703a",
+    "NETWORK": "base",
+    "PROTECTED_PATTERNS": [
+      {
+        "pattern": "api.lolo62.fun/*",
+        "price": "$0.05",
+        "description": "Accès 1 heure"
+      }
+    ]
+  }
