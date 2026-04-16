@@ -15,12 +15,6 @@
 	"assets": {
 		"directory": "public",
 	},
-	// =========================================================================
-	// ROUTES - Where x402-proxy intercepts requests
-	// =========================================================================
-	// Uncomment and configure routes to deploy x402-proxy on your domain.
-	// The proxy will intercept all requests matching these patterns.
-	,
 	"routes": [
 	 	{
 	 		"pattern": "api.lolo62.fun/*",
